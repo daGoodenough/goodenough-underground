@@ -149,7 +149,8 @@ table {
 
 .header-container {
   position: fixed;
-  background-color: lightslategray;
+  z-index: 10;
+  background-color: rgb(119, 136, 153, 0.7);
   width: 100%;
   display: grid;
   grid-column-start: 1;
@@ -174,6 +175,7 @@ table {
   flex-direction: column;
   justify-content: space-evenly;
   font-size: 1.7rem;
+  font-weight: 600;
 }
 #goodenough {
   color: red;
@@ -229,7 +231,7 @@ nav {
 /* MAIN */
 .primary-image,
 .primary-image img {
-  grid-area: 2 / 1 / span 1 / span 5;
+  grid-area: 1 / 1 / span 2 / span 5;
   width: 100%;
   height: auto;
   position: relative;
@@ -248,3 +250,14 @@ nav {
 main {
   grid-area: 3 / 3 / span 1 / span 1;
 }
+
+.img-1 {
+  grid-area: 3 / 1 / span 1 / span 2;
+}
+
+.img-2 {
+  grid-area: 3 / 4 / span 1 / span 2;
+}
+
+main p {
+ 
